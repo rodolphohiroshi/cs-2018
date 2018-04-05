@@ -10,9 +10,9 @@ public class Avancar {
 		while (diaref!= diai && mesref!= mesi && anoref!= anoi){
 			
 			//verifica se o dia ref e menor que 28
-			while(diaref < 28){
-				diaref++;
-				qtd++;			
+			if (diaref < 28){
+				diaref = 28 - diaref
+				qtd = qtd+diaref;			
 			}
 			//mes de fevereiro com 28 ou 29 dias
 			while(mesref == 2){
