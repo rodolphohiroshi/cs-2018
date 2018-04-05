@@ -29,16 +29,17 @@ public class Start {
 		//verificacao se avanca ou deduz os dias
 		if(ano > anor){ //Avancar
 			Avancar a = new Avancar();
-			System.out.println(a.avancaDia(diar, mesr, anor, dia, mes, ano, anobi));
+			a.avancaDia(diar, mesr, anor, dia, mes, ano, anobi);
 			
-		} else if(ano == anor && mes < mesr){
+		} else if(ano == anor && mes > mesr){
 			Avancar a = new Avancar();
-			System.out.println(a.avancaDia(diar, mesr, anor, dia, mes, ano, anobi));
+			a.avancaDia(diar, mesr, anor, dia, mes, ano, anobi);
 			
 		} else if(ano == anor && mes == mesr && dia > diar){//Avancar
+			Avancar a = new Avancar();
+			a.avancaDia(diar, mesr, anor, dia, mes, ano, anobi);
 			
-			
-		} else {//REduzir
+		} else {//Reduzir
 		
 		}
 						
