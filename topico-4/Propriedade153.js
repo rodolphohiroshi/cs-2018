@@ -11,4 +11,4 @@ let u = du%10;
 let result = (Math.pow((c),3)+Math.pow((d),3)+Math.pow((u),3));
 if(num == result){
     console.log("verdadeiro");
-}else console.log("falso");
+} else process.exitCode = -1;
