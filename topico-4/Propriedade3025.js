@@ -1,14 +1,15 @@
-let num = 3025;
+function propriedade3025(n) {
 
-if (num < 0 || num > 9999 ) {
-    process.exitCode = -1;
+  if (n < 0 || n > 9999) {
+    return false;
+  }
+
+  let i = Math.floor(n / 100);
+  let j = n % 100;
+  
+  let soma = i + j;
+  
+  return (soma * soma) == n;
 }
 
-let i = ~~(num/100);
-let j = num%100;
-let result = (Math.pow((i+j),2));
-
-if(result == num ){
-   console.log("verdadeiro");
-}
-else console.log("falso");
+exports.propriedade3025 = propriedade3025;
