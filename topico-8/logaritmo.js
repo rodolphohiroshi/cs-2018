@@ -10,13 +10,13 @@
     *
     *
     *  *Represents a LogaritmoNatural
-    *@constructor
-    *@param {int} n - n é exponenciador
-    *@param {int} k - identificador do processo
+    *@function LogaritmoNatural - funcao que retorna a potencia de um numero de Euler por n 
+    *@param {int} n - n é exponenciador, sendo um numero natural
+    *@param {int} k - identificador do processo, sendo um numero de Euler
 */
 
-function LogaritmoNatural(n, k){
-    if( n < 1 || k < 2 ){
+function LogaritmoNatural(n, k){ // funcao que recebe dois parametros n e k
+    if( n < 1 || k < 2 ){   //exige que n > 0 e k > 1
         return false;
     }
     let i = 2;
@@ -35,4 +35,6 @@ function LogaritmoNatural(n, k){
     return e;
 }
 exports.LogaritmoNatural = LogaritmoNatural;
+
+
 

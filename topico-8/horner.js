@@ -26,13 +26,12 @@ function Horner(x,g,a){
         return false;
     }
     
-    let p = a*g;
+    let p = a*math.florrg];
     let i = g - 1;
             
-    while( b != 0 ){
-        m = a % b;
-        a = b;
-        b = m;
+    while( 0 <= i ){
+       p = p * x + a[i]
+       i--;
     }
 
    return a;

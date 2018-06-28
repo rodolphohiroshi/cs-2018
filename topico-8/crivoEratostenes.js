@@ -4,11 +4,9 @@
     *
     *Represents crivo de eratostenes
     *@constructor {crivoEratostenes.crivo} crivo
-    *@param {vetor} a[] - vetor de tamanho a ser definido
+    *@param {vetor} a - vetor de tamanho a ser definido
     *@param {int} n - quantidade de posiçoes do vetor
 
-
-let a = []; 
 */
 
 function crivoEratostenes(a,n) {
@@ -37,13 +35,9 @@ function crivoEratostenes(a,n) {
             
             i++;
         }
-        for (i = 1; i <= n; i++){
-            console.log(a[i]);
-        }    
-        return a[16];
+
 }  
 
-let c = new crivoEratostenes(a = [], 16);
+exports.crivoEratostenes = crivoEratostenes;
 
-console.log(crivoEratostenes.c);
 

@@ -1,4 +1,4 @@
-//Funcao para testar o Maior divisor comum
+//Funcao para testar o Maior divisor comum da funcao mdc()
 
 const funcao = require("../mdc");
 

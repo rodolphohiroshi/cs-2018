@@ -1,13 +1,17 @@
 /**
-    *O valor de π é definido conforme abaixo:
-    
-    *      ∞
-    *  π = ∑(−1)^i(4/2i+1) = 4/1-4/3+4/5-4/7+...
-    *     i=0
-    *
-    * Para fins praticos um limite deve ser estabelecido para a quantidade de termos
-    *do somatorio a serem considerados. Para um toral de n termos temos a função abaixo:
-    *
+ * O valor de π é definido conforme abaixo:
+ *      ∞
+ *  π = ∑(−1)^i(4/2i+1) = 4/1-4/3+4/5-4/7+...
+ *     i=0
+ *
+ * Para fins praticos um limite deve ser estabelecido para a quantidade de termos
+ *do somatorio a serem considerados. Para um toral de n termos temos a função abaixo:
+ *
+ * 
+ * Represents Valor de pi
+ * @function Pi - funcao que retorna os valor do somatorio dos termos n
+ * @param {int} n - quantidade de termos do somatorio
+ * 
 */
 
 function Pi(n){
@@ -33,4 +37,3 @@ function Pi(n){
 }
 exports.Pi = Pi;
 
-console.log(Pi(2));
